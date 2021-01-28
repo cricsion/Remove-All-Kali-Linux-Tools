@@ -135,3 +135,8 @@ printf 'y' |sudo apt autoclean
 printf 'y' |sudo apt autoremove
 printf 'y' |sudo apt update
 printf 'y' |sudo apt dist-upgrade
+
+
+echo "The script has been successfully executed"
+echo "Tools has been removed/uninstalled"
+echo "Thanks for using this script"
