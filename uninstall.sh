@@ -133,8 +133,7 @@ printf 'y' |sudo apt remove freerdp2-x11
 printf 'y' |sudo apt remove scalpel
 printf 'y' |sudo apt autoclean 
 printf 'y' |sudo apt autoremove
-printf 'y' |sudo apt update
-printf 'y' |sudo apt dist-upgrade
+printf 'y' |sudo apt update 
 
 
 echo "The script has been successfully executed"
