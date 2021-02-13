@@ -135,6 +135,8 @@ printf 'y' |sudo apt autoclean
 printf 'y' |sudo apt autoremove
 printf 'y' |sudo apt update 
 
+#To remove configurations of all removed packages, remove the hastag before the following line
+#dpkg -l | grep '^rc' | awk '{print $2}' | sudo xargs dpkg --purge
 
 echo "The script has been successfully executed"
 echo "Tools has been removed/uninstalled"
