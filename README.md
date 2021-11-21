@@ -2,7 +2,7 @@
 The scripts removes/uninstalls all the hacking tools or any tool installed in Kali Linux
 
 
-#How to Use This Script
+# How to Use This Script
 1. Clone/download this repository
 2. If you have downloaded it then extract it.
 3. cd to the location where you have cloned/extracted this repository.
