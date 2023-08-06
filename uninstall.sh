@@ -132,6 +132,15 @@ printf 'y' |sudo apt remove zaproxy
 printf 'y' |sudo apt remove freerdp2-x11
 printf 'y' |sudo apt remove scalpel
 printf 'y' |sudo apt remove spiderfoot
+printf 'y' |sudo apt remove evil-winrm
+printf 'y' |sudo apt remove ffuf
+printf 'y' |sudo apt remove gtkhash
+printf 'y' |sudo apt remove impacket-scripts
+printf 'y' |sudo apt remove minicom
+printf 'y' |sudo apt remove netcat-traditional
+printf 'y' |sudo apt remove python3-scapy
+printf 'y' |sudo apt remove tcpdump
+printf 'y' |sudo apt remove webshells
 printf 'y' |sudo apt autoclean 
 printf 'y' |sudo apt autoremove
 printf 'y' |sudo apt update 
