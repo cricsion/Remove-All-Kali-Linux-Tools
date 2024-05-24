@@ -132,6 +132,17 @@ printf 'y' |sudo apt remove zaproxy
 printf 'y' |sudo apt remove freerdp2-x11
 printf 'y' |sudo apt remove scalpel
 printf 'y' |sudo apt remove spiderfoot
+printf 'y'| sudo apt remove ffuf
+printf 'y'| sudo apt remove webshells
+printf 'y'| sudo apt remove python3-impacket
+printf 'y'| sudo apt remove evil-winrm
+printf 'y'| sudo apt remove python3-scapy
+printf 'y'| sudo apt remove tcpdump
+printf 'y'| sudo apt remove crackmapexec
+printf 'y'| sudo apt remove netcat-traditional
+printf 'y'| sudo apt remove starkiller
+printf 'y'| sudo apt remove powershell-empire
+printf 'y'| sudo apt remove netcat-traditional 
 printf 'y' |sudo apt autoclean 
 printf 'y' |sudo apt autoremove
 printf 'y' |sudo apt update 
