@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Define the tools to remove
+# Define the tools to remove, including the newly added ones
 TOOLS="maltego msfpc set faraday recordmydesktop pipal cutycapt hashdeep bulk-extractor binwalk autopsy sleuthkit 
 pdfid pdf-parser forensic-artifacts guymager magicrescue scalpel scrounge-ntfs dbd powersploit sbd dns2tcp 
 exe2hexbat iodine miredo proxychains4 proxytunnel ptunnel pwnat sslh stunnel4 udptunnel laudanum weevely 
@@ -12,11 +12,12 @@ ncrack wordlists rsmangler dnsenum dnsrecon fierce lbd wafw00f arping fping hpin
 theharvester netdiscover netmask enum4linux nbtscan swaks snmpcheck ssldump sslh sslscan sslyze dmitry ike-scan 
 legion recon-ng spike voiphopper nikto unix-privesc-check wpscan burpsuite dirb dirbuster wfuzz cadaver 
 davtest skipfish wapiti whatweb commix zaproxy freerdp2-x11 spiderfoot bettercap subfinder feroxbuster amass 
-bloodhound cme ghidra sherlock gobuster"
+bloodhound cme ghidra sherlock gobuster netcat webshells ffuf crackmapexec evil-winrm impacket-scripts 
+kali-autopilot scapy tcpdump powershell-empire starkiller cherrytree maltego maltego-installer"
 
 # Loop through each tool and remove it individually
 for tool in $TOOLS; do
-    printf 'y' | sudo apt remove $tool
+    sudo apt remove $tool -y
 done
 
 # Cleanup and update
@@ -28,5 +29,5 @@ sudo apt update
 # dpkg -l | grep '^rc' | awk '{print $2}' | sudo xargs dpkg --purge
 
 echo "The script has been successfully executed"
-echo "Tools have been removed/uninstalled"
+echo "All tools have been removed/uninstalled"
 echo "Thanks for using this script"
