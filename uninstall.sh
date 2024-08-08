@@ -14,8 +14,10 @@ legion recon-ng spike voiphopper nikto unix-privesc-check wpscan burpsuite dirb 
 davtest skipfish wapiti whatweb commix zaproxy freerdp2-x11 spiderfoot bettercap subfinder feroxbuster amass 
 bloodhound cme ghidra sherlock gobuster"
 
-# Remove tools
-sudo apt remove -y $TOOLS
+# Loop through each tool and remove it individually
+for tool in $TOOLS; do
+    printf 'y' | sudo apt remove $tool
+done
 
 # Cleanup and update
 sudo apt autoclean 
