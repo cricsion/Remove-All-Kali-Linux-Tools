@@ -16,4 +16,5 @@ The scripts removes/uninstalls all the hacking tools or any tool installed in Ka
 # Contributors
 
 <a href = "https://github.com/cricsion/Remove-All-Kali-Linux-Tools">
+    <img src = "https://contrib.rocks/image?repo=cricsion/Remove-All-Kali-Linux-Tools"/>
 </a>
